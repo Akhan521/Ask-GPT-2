@@ -24,8 +24,10 @@ def generate(prompt: str, model: PreTrainedModel, tokenizer: PreTrainedTokenizer
 
     generation_config = configure_generation(model, tokenizer)
     encoded_prompt = tokenizer.encode(prompt, add_special_tokens=True, return_tensors='pt').to(device)
+    # Truncate the tokenized prompt to the model's context length if necessary.
+    if encoded_prompt.shape[-1] > model.config.max_position_embeddings:
+        encoded_prompt = encoded_prompt[:, -model.config.max_position_embeddings:]
     out = model.generate(input_ids=encoded_prompt, generation_config=generation_config, repetition_penalty=2.0, do_sample=True)
     decoded_string = tokenizer.decode(out[0].tolist(), clean_up_tokenization_spaces=True)
-    print(decoded_string)
     
     return decoded_string

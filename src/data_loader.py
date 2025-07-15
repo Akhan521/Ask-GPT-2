@@ -6,9 +6,9 @@ def load_data(dataset_name: str) -> DatasetDict:
     dataset = load_dataset(dataset_name)
     return dataset
 
-def get_tokenizer(model_name: str) -> AutoTokenizer:
+def get_tokenizer(model_name_or_path: str) -> AutoTokenizer:
     '''Loads the corresponding tokenizer for a given model.'''
-    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = 'right'
     tokenizer.pad_token_id = tokenizer.eos_token_id
