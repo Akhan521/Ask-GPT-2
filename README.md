@@ -127,6 +127,6 @@ python -m src/inference.py
 
 Thank you for reading about my project and sharing your time with me!
 
-Feel free to reach out via [GitHub](https://github.com/Akhan521) or connect on [LinkedIn](https://www.linkedin.com/in/aamir-khan-aak521/) if you have any feedback for me or would like to chat with me!
+- Feel free to reach out via [GitHub](https://github.com/Akhan521) or connect on [LinkedIn](https://www.linkedin.com/in/aamir-khan-aak521/) if you have any feedback for me or would like to chat with me!
 
-You can also view my portfolio here: [Portfolio](https://aamir-khans-portfolio.vercel.app/)
+- You can also view my portfolio here: [Portfolio](https://aamir-khans-portfolio.vercel.app/)
