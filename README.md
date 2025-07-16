@@ -1,4 +1,4 @@
-# 🤖 Ask-GPT-2: Fine-Tuning GPT-2 for Question Answering
+# 🤖 Ask-GPT-2: Fine-Tuning GPT-2 for Helpful Question Answering
 
 I was curious about how language models can be steered toward specific tasks and become more helpful with just a bit of guidance. I chose question answering because it's a practical task that highlights how well a model understands and responds to prompts, perfect for testing whether fine-tuning actually makes a model more helpful.
 
