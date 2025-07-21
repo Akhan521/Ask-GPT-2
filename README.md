@@ -105,7 +105,7 @@ pip install -r requirements.txt
 ```bash
 # This will fine-tune distilgpt2 on the Guanaco QA dataset
 # and save your model + tokenizer inside the logs/ directory.
-python -m src/train.py
+python -m src.train
 ```
 
 #### Option B: Skip Training - Use Fine-Tuned Model from 🤗 Hub
@@ -118,7 +118,7 @@ You can load my already fine-tuned model directly:
 ```bash
 # Run prompts against both the base and fine-tuned models
 # and compare their generated responses side-by-side.
-python -m src/inference.py
+python -m src.inference
 ```
 - If you're loading your locally fine-tuned model from `logs/`, be sure to set `use_local_finetuned` to `True` in `inference.py`.
 ---
